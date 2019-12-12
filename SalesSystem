@@ -50,8 +50,8 @@ public class SalesSystem {
         //Start list order thread
         ListOrderThread listOrderThread = new ListOrderThread();
 
-      //  DateFormat currentDateFormat = new SimpleDateFormat("dd MMM yyyy");
-        //listOrderThread.setDate(currentDateFormat.format(new Date()));
+        DateFormat currentDateFormat = new SimpleDateFormat("dd MMM yyyy");
+        listOrderThread.setDate(currentDateFormat.format(new Date()));
 
         listOrderThread.start();
     }
